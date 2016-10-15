@@ -9,10 +9,10 @@ light L = (1; 0; 0) on a white object C = (255; 255; 255). Thus, in order to sol
 are needed. One such prior is the \gray world" assumption that states the average color of the image under
 white light is gray (Recall that any color (r; g; b) where r = g = b is gray).
 
-Assume that the average color of an image under white light L = (1; 1; 1) is (128; 128; 128). Under this
-assumption, show that given an image the color of the light can be computed as L =
-(rave/128 ; gave/128 ; bave/128 , where, rave; gave; bave are the average red, green, and blue values of the image.
+Assuming that the average color of an image under white light L = (1; 1; 1) is (128; 128; 128). Under this
+assumption, given an image the color of the light can be computed as L = (rave/128 ; gave/128 ; bave/128 , where, rave; gave; bave are the average red, green, and blue values of the image.
 
 
-Thus, you can obtain the true color of a pixel as: cr = ir x 128/rave; cg = ig x 128/gave; cb = ib x 128/bave;
+Thus,the true color of a pixel can be obtained as: cr = ir x 128/rave; cg = ig x 128/gave; cb = ib x 128/bave;
 WhiteBalance.m takes an image I and returns the light L and color image C using the above calculations.
+
